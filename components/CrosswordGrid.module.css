@@ -1,0 +1,27 @@
+/* components/CrosswordGrid.module.css */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  gap: 2px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.highlighted {
+  background-color: yellow;
+}
+.aiCell {
+  background-color: lightblue;
+}
+
