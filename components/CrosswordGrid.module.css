@@ -1,27 +1,9 @@
-/* components/CrosswordGrid.module.css */
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(10, 30px);
-  grid-template-rows: repeat(10, 30px);
-  gap: 2px;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.cell {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  font-size: 16px;
-  text-transform: uppercase;
-  border: 1px solid #ccc;
-  outline: none;
-}
-.highlighted {
-  background-color: yellow;
-}
-.aiCell {
-  background-color: lightblue;
-}
-
+.boardWrap{background:#0b0b10;padding:14px;border-radius:14px;border:1px solid #1e1e28;width:fit-content;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.board{display:grid;grid-template-columns:repeat(10,36px);grid-template-rows:repeat(10,36px);gap:0;background:#0b0b10}
+.block,.cell{box-shadow:inset 0 0 0 1px #1f2430}
+.block{width:36px;height:36px;background:#000}
+.cell{width:36px;height:36px;position:relative;background:#fff;display:flex;align-items:center;justify-content:center}
+.cell input{width:100%;height:100%;border:none;outline:none;text-align:center;font-size:16px;font-weight:700;background:transparent;text-transform:uppercase}
+.num{position:absolute;top:2px;left:3px;font-size:10px;color:#444}
+.hl{outline:2px solid #409cff;outline-offset:-2px}
+.aiCell{background:#eaf5ff}

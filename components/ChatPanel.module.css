@@ -1,0 +1,13 @@
+.wrap{width:320px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;display:flex;flex-direction:column;overflow:hidden}
+.header{padding:10px 12px;font-weight:700;border-bottom:1px solid #eee}
+.feed{flex:1;overflow:auto;padding:10px;display:flex;flex-direction:column;gap:8px;background:#fafafa}
+.empty{opacity:.6;font-size:13px}
+.msg{padding:8px 10px;border-radius:10px;background:#fff;border:1px solid #eee}
+.player{background:#eef7ff}
+.ai{background:#eefbf1}
+.system{background:#fff8e6}
+.sender{font-size:12px;opacity:.7;margin-bottom:4px}
+.text{white-space:pre-wrap}
+.inputRow{display:flex;gap:8px;padding:10px;border-top:1px solid #eee}
+.inputRow input{flex:1;border:1px solid #ddd;border-radius:8px;padding:8px 10px;outline:none}
+.inputRow button{border:none;background:#111;color:#fff;padding:8px 12px;border-radius:8px;cursor:pointer}
