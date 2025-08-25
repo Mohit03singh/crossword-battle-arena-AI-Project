@@ -18,10 +18,12 @@ export async function POST(req) {
       !Number.isFinite(move.col) ||
       !move.answer
     ) {
+      // Return 200 with a soft error so client can fallback to deterministic move
       return NextResponse.json({ error: "No valid move" }, { status: 200 });
     }
     return NextResponse.json(move, { status: 200 });
-  } catch {
+  } catch (e) {
+    console.error("[/api/ai/solve] error:", e);
     return NextResponse.json({ error: "AI solve failed" }, { status: 200 });
   }
 }
